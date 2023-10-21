@@ -347,6 +347,7 @@ h3 {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+   padding: 0;
 }
 .logo-footer-container {
     display: flex;
@@ -529,13 +530,13 @@ address {
     align-items: center;
 }
 .filter {
-    width: 516px;
     padding-bottom: 50px;
     border-radius: 4px;
     padding-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
 
 }
@@ -548,7 +549,7 @@ address {
     line-height: 26px;
     background-color:var(--background-light-grey-color);
     border: 0;
-    padding: 6px 22px;
+    padding: 6px 24px;
     transition: background-color var(--transition), box-shadow var(--transition);
 }
 .filter .filter-button:hover {
@@ -759,6 +760,7 @@ textarea:focus {
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
     position: relative;
@@ -838,33 +840,123 @@ textarea:focus {
     display: none;
 }
 
-.js-menu-container .is-open {
+.js-menu-container.is-open {
     display: flex;
     flex-direction: column;
     position: fixed;
     background-color: var(--background-white-color);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
 .js-menu-container .js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     border: none;
     background: none;
     cursor: pointer;
     display: flex;
     align-self: flex-end;
-    margin-bottom: 30px;
+    transition: color var(--transition);
+    cursor: pointer;
+    padding: 0;
+}
+  
+.js-menu-container .js-close-menu svg:hover,
+.js-menu-container .js-close-menu svg:focus {
+    fill: var(--blue-color);
 }
 
 .js-menu-container .js-close-menu svg {
     width: 40px;
     height: 40px;
+    fill: var(--font-dark-grey-color);
 }
 
 .menu-drawer-navigation {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 48px 0;
+    gap: 230px;
+}
+
+.menu-navigation {
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+} 
+
+.menu-navigation a {
+    color: var(--font-dark-grey-color);
+}
+
+.menu-navigation a:hover,
+.menu-navigation a:focus {
+    color: var(--blue-color);
+}
+
+.menu-navigation-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 64px; 
+}
+
+.menu-contact {
+    display: flex;
+    flex-direction: column ;
+    gap: 32px;
+}
+
+.menu-phone {
+    font-family: inherit;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: var(--blue-color);
+}
+
+.menu-email {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: inherit;    
+}
+
+.menu-social {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.menu-social li {
+    border-right: 1px solid var(--font-dark-grey-color);
+    padding-right: 10px;
+}
+
+.menu-social li:last-child {
+    border: none;
+}
+
+.menu-social a {
+    color: var(--blue-color);
 }
 
 /* Tablet */
@@ -950,6 +1042,22 @@ textarea:focus {
         margin-right: 10px;
         display: inline-block;
     }
+    .contact-container li {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 16px;
+        transition: color var(--transition), stroke var(--transition);
+    }
+    .contact-container li:hover,
+    .contact-container li:focus {
+        color: var(--blue-hover-color);
+        stroke: var(--blue-hover-color);
+        cursor: pointer;
+    }
     .logo-container {
         display: flex;
         justify-content: left;
@@ -982,7 +1090,11 @@ textarea:focus {
         width: 450px;
         height: 50px;
     }
-    
+    .global-footer-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 /* Desktop */
@@ -1162,5 +1274,8 @@ textarea:focus {
     }
     .input-email {
         width: 358px;
+    }
+    .filter-list {
+        justify-content: center;
     }
 }
