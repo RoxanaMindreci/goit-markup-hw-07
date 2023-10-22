@@ -20,6 +20,42 @@
 
   <body>
     <div class="container">
+
+       <!--Mobile menu-->
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg>
+          <use href="./images/symbol-defs.svg#icon-close-mobile-menu" />
+        </svg>
+      </button>
+      <nav class="menu-drawer-navigation">
+
+        <ul class="menu-navigation">
+          <li><a href="./index.html">Studio</a></li>
+          <li><a href="./portofolio.html">Portofolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+
+        <div class="menu-navigation-contact">
+
+          <div class="menu-contact">
+            <a href="tel:+1-212-772-4150" class="menu-phone">+1-212-772-4150</a>
+            <a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
+          </div>
+        
+          <ul class="menu-social">
+            <li><a href="" target="_blank">Instagram</a></li>
+            <li><a href="" target="_blank">Twitter</a></li>
+            <li><a href="" target="_blank">Facebook</a></li>
+            <li><a href="" target="_blank">LinkedIn</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </div>
+
     <div class="header-container">
       <header class="global-header">
       <!--Logo-->
@@ -57,7 +93,14 @@
             </ul>
     </div>
       
-    </header></div>  
+        <div class="menu-button js-open-menu">
+          <svg>
+            <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+          </svg>
+        </div>
+
+    </header>
+  </div>  
     
 
     <main>
@@ -87,14 +130,71 @@
 <div class="portofolio-container">
         <ul class="filter-list">
           <li class="filter-card">
-            <div class="filter-image"><img src="./images/technoduck.jpg" alt="Technoduck" width="370" />
+            <div class="filter-image">
+              
+              <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/technoduck-d.jpg 1x, 
+            ./images/technoduck-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/technoduck-t.jpg 1x, 
+            ./images/technoduck-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/technoduck-m.jpg 1x, 
+            ./images/technoduck-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/technoduck-d.jpg"
+            alt="Technoduck" type="image/jpeg"/>
+        </picture>
+
+
             <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Technoduck</h3>
             <span>Web-site</span></div>
           </li>
 
           <li class="filter-card">
-            <div class="filter-image"><img src="./images/poster.jpg" alt="Poster New Orlean vs Golden Star" width="370"/>
+            <div class="filter-image">
+              
+              <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/poster-d.jpg 1x, 
+            ./images/poster-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/poster-t.jpg 1x, 
+            ./images/poster-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/poster-m.jpg 1x, 
+            ./images/poster-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/poster-d.jpg"
+            alt="Poster New Orlean vs Golden Star" type="image/jpeg"/>
+        </picture>
+
             <div class="overlay"></div>
             </div>
             <div class="filter-card-footer"><h3 class="filter-title">Poster New Orlean vs Golden Star</h3>
@@ -103,64 +203,210 @@
 
           <li class="filter-card">
             <div class="filter-image">
-            <img
-              src="./images/seafood.jpg"
-              alt="Seafood Restaurant"
-              width="370"
-            /><div class="overlay"></div></div>
+            
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/seafood-d.jpg 1x, 
+            ./images/seafood-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/seafood-t.jpg 1x, 
+            ./images/seafood-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/seafood-m.jpg 1x, 
+            ./images/seafood-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/seafood-d.jpg"
+            alt="Seafood Restaurant" type="image/jpeg"/>
+        </picture>
+            
+            <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Seafood Restaurant</h3>
             <span>Apps</span></div>
           </li>
 
           <li class="filter-card">
             <div class="filter-image">
-            <img
-              src="./images/project-prime.jpg"
-              alt="Project Prime"
-              width="370"
-            /><div class="overlay"></div></div>
+            
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/project-prime-d.jpg 1x, 
+            ./images/project-prime-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/project-prime-t.jpg 1x, 
+            ./images/project-prime-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/project-prime-m.jpg 1x, 
+            ./images/project-prime-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/project-prime-d.jpg"
+            alt="Project Prime" type="image/jpeg"/>
+        </picture>
+
+            <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Project Prime</h3>
             <span>Marketing</span></div>
           </li>
 
           <li class="filter-card">
             <div class="filter-image">
-            <img
-              src="./images/project-boxes.jpg"
-              alt="Project Boxes"
-              width="370"
-            /><div class="overlay"></div></div>
+            
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/project-boxes-d.jpg 1x, 
+            ./images/project-boxes-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/project-boxes-t.jpg 1x, 
+            ./images/project-boxes-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/project-boxes-m.jpg 1x, 
+            ./images/project-boxes-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/project-boxes-d.jpg"
+            alt="Project Boxes" type="image/jpeg"/>
+        </picture>
+            
+            <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Project Boxes</h3>
             <span>Apps</span></div>
           </li>
 
           <li class="filter-card">
             <div class="filter-image">
-            <img
-              src="./images/inspiration.jpg"
-              alt="Inspiration has no Borders"
-              width="370"
-            /><div class="overlay"></div></div>
+           
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/inspiration-d.jpg 1x, 
+            ./images/inspiration-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/inspiration-t.jpg 1x, 
+            ./images/inspiration-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/inspiration-m.jpg 1x, 
+            ./images/inspiration-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/inspiration-d.jpg"
+            alt="Inspiration has no Borders" type="image/jpeg"/>
+        </picture>
+            
+            <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Inspiration has no Borders</h3>
             <span>Web-site</span></div>
           </li>
 
           <li class="filter-card">
             <div class="filter-image">
-            <img
-              src="./images/limited-edition.jpg"
-              alt="Limited Edition"
-              width="370"
-            /><div class="overlay"></div></div>
+           
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/limited-edition-d.jpg 1x, 
+            ./images/limited-edition-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/limited-edition-t.jpg 1x, 
+            ./images/limited-edition-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/limited-edition-m.jpg 1x, 
+            ./images/limited-edition-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/limited-edition-d.jpg"
+            alt="Limited Edition" type="image/jpeg"/>
+        </picture>
+            
+            <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Limited Edition</h3>
             <span>Design</span></div>
           </li>
 
           <li class="filter-card">
             <div class="filter-image">
-            <img src="./images/project-lab.jpg" 
-            alt="Project LAB" width="370" 
-            /><div class="overlay"></div></div>
+            
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/project-lab-d.jpg 1x, 
+            ./images/project-lab-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/project-lab-t.jpg 1x, 
+            ./images/project-lab-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/project-lab-m.jpg 1x, 
+            ./images/project-lab-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/project-lab-d.jpg"
+            alt="Project LAB" type="image/jpeg"/>
+        </picture>
+            
+            <div class="overlay"></div></div>
             <div class="filter-card-footer">
               <h3 class="filter-title">Project LAB</h3>
             <span>Marketing</span></div>
@@ -168,11 +414,35 @@
 
           <li class="filter-card">
             <div class="filter-image">
-            <img
-              src="./images/growing-busines.jpg"
-              alt="Growing Business"
-              width="370"
-            /><div class="overlay"></div></div>
+            
+            <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/growing-busines-d.jpg 1x, 
+            ./images/growing-busines-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/growing-busines-t.jpg 1x, 
+            ./images/growing-busines-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/growing-busines-m.jpg 1x, 
+            ./images/growing-busines-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/growing-busines-d.jpg"
+            alt="Growing Business" type="image/jpeg"/>
+        </picture>
+            
+            <div class="overlay"></div></div>
             <div class="filter-card-footer"><h3 class="filter-title">Growing Business</h3>
             <span>Apps</span></div>
           </li>

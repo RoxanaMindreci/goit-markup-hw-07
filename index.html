@@ -37,7 +37,7 @@
         </ul>
 
         <div class="menu-navigation-contact">
-          
+
           <div class="menu-contact">
             <a href="tel:+1-212-772-4150" class="menu-phone">+1-212-772-4150</a>
             <a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
@@ -103,17 +103,19 @@
       </div>
 
       <main>
-        <div class="request-section">
+        
           <section>
-            <h1>
-              EFFECTIVE SOLUTIONS FOR <br />
+            <div class="request-section">
+            <h1 >
+              EFFECTIVE SOLUTIONS FOR 
               YOUR BUSINESS
             </h1>
             <button data-modal-open type="button" class="request-button">
               Request our service
             </button>
-          </section>
-        </div>
+          </div>
+        </section>
+        
 
         <!--What we do section-->
 
@@ -181,7 +183,9 @@
             <ul class="images-list">
               <li class="images">
                 <img
-                  src="./images/what-we-do-1.jpg"
+                  srcset="./images/desktop-apps.jpg 1x,
+              ./images/desktop-apps.jpg 2x"
+                  src="./images/desktop-apps.jpg"
                   alt="Man typing plans from paper to computer"
                   width="370"
                 />
@@ -189,20 +193,19 @@
               </li>
 
               <li class="images">
-                <img
-                  src="./images/what-we-do-2.jpg"
-                  alt="Man optimizing phone app from computer"
-                  width="370"
-                />
-                <div class="what-we-do-label"><p>Mobile APPS</p></div>
-              </li>
+              <img
+                  srcset="./images/mobile-apps.jpg 1x,
+              ./images/mobile-apps-2x.jpg 2x"
+                  src="./images/mobile-apps.jpg"
+                  alt="Man optimizing mobile app from computer"/>
+              <div class="what-we-do-label"><p>Mobile APPS</p></div>
 
               <li class="images">
                 <img
-                  src="./images/what-we-do-3.jpg"
-                  alt="Man choosing color palette from tablet"
-                  width="370"
-                />
+                  srcset="./images/design-solutions.jpg 1x, 
+                  ./images/design-solutions-2x.jpg 2x"
+                  src="./images/design-solutions.jpg"
+                  alt="Man choosing color palette from tablet"/>
                 <div class="what-we-do-label"><p>DESIGN SOLUTIONS</p></div>
               </li>
             </ul>
@@ -216,11 +219,37 @@
           <div class="our-team-container">
             <ul class="our-team-list">
               <li class="our-team-item">
-                <img
-                  src="./images/our-team-1.jpg"
-                  alt="Product Designer"
-                  width="270"
-                />
+                <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/christopher-walker-d.jpg 1x, 
+            ./images/christopher-walker-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/christopher-walker-t.jpg 1x, 
+            ./images/christopher-walker-t-2x.jpg 2x 
+            "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="
+              ./images/christopher-walker-m.jpg 1x, 
+            ./images/christopher-walker-m-2x.jpg 2x 
+            " 
+          />
+
+          <img
+            src="./images/christopher-walker-d.jpg"
+            alt="Christopher Walker" class="team-image" type="image/jpeg"/>
+        </picture>
+
                 <div class="our-team-footer">
                   <h3>Christopher Walker</h3>
                   <p>Product Designer</p>
@@ -279,11 +308,34 @@
                 </div>
               </li>
               <li class="our-team-item">
-                <img
-                  src="./images/our-team-2.jpg"
-                  alt="Frontend Developer"
-                  width="270"
-                />
+
+        <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/kylie-evans-d.jpg 1x, 
+            ./images/kylie-evans-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/kylie-evans-t.jpg 1x, 
+            ./images/kylie-evans-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/kylie-evans-m.jpg 1x, 
+            ./images/kylie-evans-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/kylie-evans-d.jpg"
+            alt="Kylie Evans" class="team-image" type="image/jpeg"/>
+        </picture>
+
                 <div class="our-team-footer">
                   <h3>Kylie Evans</h3>
                   <p class="job-position">Frontend Developer</p>
@@ -343,11 +395,33 @@
               </li>
 
               <li class="our-team-item">
-                <img
-                  src="./images/our-team-3.jpg"
-                  alt="Marketing"
-                  width="270"
-                />
+        <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/ryan-harris-d.jpg 1x, 
+            ./images/ryan-harris-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/ryan-harris-t.jpg 1x, 
+            ./images/ryan-harris-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/ryan-harris-m.jpg 1x, 
+            ./images/ryan-harris-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/ryan-harris-d.jpg"
+            alt="Ryan Harris" class="team-image" type="image/jpeg"/>
+        </picture>
+                
                 <div class="our-team-footer">
                   <h3>Ryan Harris</h3>
                   <p class="job-position">Marketing</p>
@@ -407,11 +481,34 @@
               </li>
 
               <li class="our-team-item">
-                <img
-                  src="./images/our-team-4.jpg"
-                  alt="UI Designer"
-                  width="270"
-                />
+                <picture>
+
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="./images/tyler-moore-d.jpg 1x, 
+            ./images/tyler-moore-d-2x.jpg 2x  "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/tyler-moore-t.jpg 1x, 
+            ./images/tyler-moore-t-2x.jpg 2x  "
+          />
+
+          <!-- Mobile -->
+          <source
+            srcset="./images/tyler-moore-m.jpg 1x, 
+            ./images/tyler-moore-m-2x.jpg 2x  "
+          />
+
+          <img
+            src="./images/tyler-moore-d.jpg"
+            alt="Tyler Moore" class="team-image" type="image/jpeg"/>
+        </picture>
+
+
                 <div class="our-team-footer">
                   <h3>Tyler Moore</h3>
                   <p class="job-position">UI Designer</p>
