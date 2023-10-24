@@ -22,39 +22,36 @@
     <div class="container">
 
        <!--Mobile menu-->
-    <div class="js-menu-container">
-      <button class="menu-toggle js-close-menu">
-        <svg>
-          <use href="./images/symbol-defs.svg#icon-close-mobile-menu" />
-        </svg>
-      </button>
-      <nav class="menu-drawer-navigation">
-
-        <ul class="menu-navigation">
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portofolio.html">Portofolio</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-
-        <div class="menu-navigation-contact">
-
-          <div class="menu-contact">
-            <a href="tel:+1-212-772-4150" class="menu-phone">+1-212-772-4150</a>
-            <a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
-          </div>
-        
-          <ul class="menu-social">
-            <li><a href="" target="_blank">Instagram</a></li>
-            <li><a href="" target="_blank">Twitter</a></li>
-            <li><a href="" target="_blank">Facebook</a></li>
-            <li><a href="" target="_blank">LinkedIn</a></li>
+       <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu">
+          <svg>
+            <use href="./images/symbol-defs.svg#icon-close-mobile-menu" />
+          </svg>
+        </button>
+        <nav class="menu-drawer-navigation">
+  
+          <ul class="menu-navigation">
+            <li><a href="./index.html">Studio</a></li>
+            <li><a href="./portofolio.html"><span class="current">Portofolio</span></a></a></li>
+            <li><a href="#">Contacts</a></li>
           </ul>
-
-        </div>
-
-      </nav>
-
-    </div>
+  
+          <div class="menu-navigation-contact">
+  
+            <div class="menu-contact">
+              <a href="tel:+1-212-772-4150" class="menu-phone">+1-212-772-4150</a>
+              <a href="mailto:info@devstudio.com" class="menu-email">info@devstudio.com</a>
+            </div>
+          
+            <ul class="menu-social">
+              <li><a href="" target="_blank">Instagram</a></li>
+              <li><a href="" target="_blank">Twitter</a></li>
+              <li><a href="" target="_blank">Facebook</a></li>
+              <li><a href="" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
     <div class="header-container">
       <header class="global-header">
@@ -93,11 +90,15 @@
             </ul>
     </div>
       
-        <div class="menu-button js-open-menu">
-          <svg>
-            <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
-          </svg>
-        </div>
+       <!--Mobile Menu Button-->
+
+       <div class="menu-button js-open-menu">
+        <svg>
+          <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+        </svg>
+      </div>
+
+      
 
     </header>
   </div>  
@@ -563,5 +564,17 @@
         </div>
       </footer>
   </div>
+
+<!--Script-->
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
+
+
   </body>
 </html>

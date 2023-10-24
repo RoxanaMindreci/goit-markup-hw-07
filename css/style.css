@@ -60,12 +60,13 @@ h3 {
     display: flex; 
     justify-content: center;   
     align-items: center;
-    padding-bottom: 60px;
+    padding: 60px 15px;
 }
 
 .list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding: 0;
     justify-content: center;
@@ -204,7 +205,7 @@ h3 {
 }
 
 .list .what-we-do p {
-    max-width: 270px;
+    width: 290px;
 }
 
 .what-we-do-item {
@@ -248,11 +249,11 @@ h3 {
 .our-team-item {
     background-color: var(--background-white-color);
     display: block;
-    padding: 0;
+    padding: 0 15px;
 }
 
 .team-image {
-    width: 450px;
+    width: 300px;
 }
 
 .our-team-footer {
@@ -274,8 +275,10 @@ h3 {
 }
 
 .our-team-social {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-team-social-list {
@@ -314,6 +317,10 @@ h3 {
     width: 44px;
     height: 44px;
     padding-left: 12px;
+}
+
+.regular-costumers-section {
+    padding-top: 0;
 }
 
 .regular-costumers-item { 
@@ -393,11 +400,14 @@ h3 {
 } 
 
 .global-footer .address-container {
-    padding-top: 15px;
     margin: 0;
     padding-left: 0;
     line-height: 16px;
     padding-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .address-container li {
@@ -576,7 +586,7 @@ address {
 }
 
 .filter {
-    padding-bottom: 40px;
+    padding: 0 15px 40px 15px;
     border-radius: 4px;
     display: flex;
     justify-content: flex-start;
@@ -961,7 +971,7 @@ textarea:focus {
     flex-direction: column;
     margin: 0 auto;
     padding: 48px 15px;
-    gap: 230px;
+    gap: 200px;
 }
 
 .menu-navigation {
@@ -974,6 +984,10 @@ textarea:focus {
     flex-direction: column;
     gap: 32px;
 } 
+
+.menu-navigation .current {
+    color: var(--blue-color);
+}
 
 .menu-navigation a {
     color: var(--font-dark-grey-color);
@@ -1016,18 +1030,20 @@ textarea:focus {
 
 .menu-social {
     font-family: inherit;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.02em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
 }
 
 .menu-social li {
-    border-right: 1px solid var(--font-dark-grey-color);
+    border-right: 1px solid #21212133;
     padding-right: 5px;
 }
 
@@ -1047,6 +1063,15 @@ textarea:focus {
         align-items: center;
         justify-content: space-between;
         gap: 93px;   
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+        justify-content: center;
     }
 
     .main-navigation {
@@ -1203,6 +1228,14 @@ textarea:focus {
 
      .what-we-do-title {
         text-align: left;
+    }
+
+    .list .what-we-do p {
+        width: 354px;
+    }
+
+    .our-team-item  {
+        padding: 0;
     }
 
     .team-image {
@@ -1411,8 +1444,24 @@ textarea:focus {
         height: 50px;;
     }
 
+    .section-container {
+        padding: 60px 15px;
+    }
+
     .section-container .list .what-we-do .what-we-do-title {    
         text-align: left;
+    }
+
+    .list .what-we-do {
+        flex-basis: calc((100%-120px)/4);
+        color: inherit;
+        font-family: inherit;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .list .what-we-do p {
+        width: 270px;
     }
     
     .section-container .list {
@@ -1448,15 +1497,26 @@ textarea:focus {
     }
 
     .global-footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 93px;
+        gap: 93px;  
+    }
+
+    .global-footer .address-container {
+        display: block;
     }
 
     .logo-footer-container {
         display: flex;
         align-items: center;
         justify-content: left;
+    }
+
+    .social-footer-container {
+        padding-left: 40px;
     }
 
     .social-title {
@@ -1474,7 +1534,7 @@ textarea:focus {
     }
 
     .input-email {
-        width: 358px;
+        width: 350px;
     }
 
     .filter {
@@ -1505,6 +1565,7 @@ textarea:focus {
     .section-container {
         padding-bottom: 94px;
         padding-top: 50px;
+
     }
 
     .our-team-container {
